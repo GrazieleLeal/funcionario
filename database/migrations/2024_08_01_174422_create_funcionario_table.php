@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('cpf');
             $table->timestamp('dataAdmissao');
-            $table->timestamp('dataDemissao'); 
+            $table->timestamp('dataDemissao')->nullable();
             $table->timestamp('dataNascimento');
             $table->float('salario');
 

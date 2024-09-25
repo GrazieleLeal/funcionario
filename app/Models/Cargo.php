@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Funcionario;
 //use App\Http\Controllers\Funcionario;
 
 /**
@@ -24,4 +25,11 @@ class Cargo extends Model
         'nome',
         'descricao'
     ];
+
+    public function funcionario()
+    {
+        return $this->hasMany(Funcionario::class);
+    }
+
+
 }

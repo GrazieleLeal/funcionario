@@ -5,12 +5,14 @@ use App\Http\Controllers\FuncionarioController;
 use App\Http\Controllers\CargoController;
 
 Route::get('/', function () {
-    return view('conteudoTemplate');
+    return view('frontend.conteudoTemplate');
 });
 
+Route::resource('funcionario', FuncionarioController::class);
 
-Route::get('inseretete', [FuncionarioController::class, 'inseretete']);
-Route::get('insereteste', [CargoController::class, 'insereteste']);
+
+//Route::get('inseretete', [FuncionarioController::class, 'inseretete']);
+//Route::get('insereteste', [CargoController::class, 'insereteste']);
 
 
 Route::middleware([
