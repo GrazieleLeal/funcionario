@@ -10,6 +10,23 @@
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                 class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
     </div>
+    <div style="margin-bottom:40px  ">
+        <a href="{{route('funcionario.index')}}" class="btn btn-primary btn-lg">
+            <span class="text">Funcionarios</span>
+        </a>
+        <a href="{{route('cliente.index')}}" class="btn btn-primary btn-lg">
+            <span class="text">Clientes</span>
+        </a>
+        <a href="{{route('produto.index')}}" class="btn btn-primary btn-lg">
+            <span class="text">Produtos</span>
+        </a>
+    </div>
+    <div style="margin-bottom:40px  ">
+        <a href="{{route('calendario.index')}}" class="btn btn-info btn-lg">
+            <span class="text">Calendário de vendas</span>
+        </a>
+    </div>
+
 
     <!-- Content Row -->
     <div class="row">
