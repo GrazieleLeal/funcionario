@@ -43,9 +43,9 @@
                 <tr>
                     <td>{{ $value->nome }}</td>
                     <td>{{ $value->cpf }}</td>
-                    <td>{{ $value->dataAdmissao }}</td>
-                    <td>{{ $value->dataDemissao }}</td>
-                    <td>{{ $value->dataNascimento }}</td>
+                    <td>{{ \Carbon\Carbon::parse($value->dataAdmissao)->format('d/m/Y') }}</td>
+                    <td>{{ \Carbon\Carbon::parse($value->dataDemissao)->format('d/m/Y') }}</td>
+                    <td>{{ \Carbon\Carbon::parse($value->dataNascimento)->format('d/m/Y') }}</td>
                     <td>{{ $value->salario }}</td>
                     <td>{{ $value->cargo->nome }}</td>
                     <td>

@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Cargo;
+use App\Models\Cliente;
 
 /**
  * Class Funcionario
@@ -38,4 +39,10 @@ class Funcionario extends Model
     public function cargo(){
         return $this->belongsTo(Cargo::class, 'cargo_id');
     }
+
+    public function cliente()
+    {
+        return $this->hasMany(Cliente::class);
+    }
+
 }

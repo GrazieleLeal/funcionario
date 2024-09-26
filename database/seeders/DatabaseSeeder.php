@@ -7,6 +7,10 @@ use App\Models\User;
 use Illuminate\Database\Seeder;
 use App\Models\Cargo;
 use App\Models\Funcionario;
+use App\Models\Cliente;
+use App\Models\Venda;
+use App\Models\Produto;
+use App\Models\ProdutoVenda;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,6 +23,11 @@ class DatabaseSeeder extends Seeder
 
         CargoSeeder::class;
         FuncionarioSeeder::class;
+        ClienteSeeder::class;
+        VendaSeeder::class;
+        ProdutoSeeder::class;
+        ProdutoVendaSeeder::class;
+
         /*
         User::factory()->create([
             'name' => 'Test User',
